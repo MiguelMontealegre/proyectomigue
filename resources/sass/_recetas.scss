@@ -1,0 +1,211 @@
+// ESTE VA A SER EL ARCHIVO QUE VA A CONTENER NUESTROS ESTILOS PERSONALES DE NUESTRO PROYECTO
+body {
+  font-family: $parrafos-font-family;
+  background-color: #f4f0f0;
+}
+trix-editor {
+  min-height: 400px;
+  height: auto!important;
+}
+
+
+
+.bg-primary .navbar-brand {
+  color: white;
+  font-family: 'Cabin', sans-serif;  //Tipografia de el titulo RecetasMontealegre
+  font-size: 2rem;
+ // font-family: 'Fredoka One', cursive;
+  color: #FFF!important;
+  font-size: 2.4rem;
+  text-decoration: none;
+  &:hover {
+      color: white;
+  }
+}
+
+
+
+.barra {
+  background-color: #ED4646!important
+}
+/*
+.fecha {
+  color: #ED4646 !important
+}
+.receta-meta p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.navbar-light  {
+  .navbar-nav {
+      .nav-link{
+          color: #FFF;
+          font-size: 1.4rem;
+              &:focus,
+              &:hover {
+                  color: #FFF;
+          }
+      }
+  }
+}      */
+
+.titulo-categoria {
+  font-family: 'Cabin', sans-serif;
+  color: #333;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #ED4646 !important;
+  display: inline-block;
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+}
+
+
+
+
+//Para que la imagen se adapte a un espacio sin recortase ni estirarse
+.adaptarse{
+   background-size: contain;
+   border-radius: 1%;
+}
+
+//Centra un div
+.centrar{
+  margin-left: auto; 
+  margin-right:auto; 
+  height: 30px;
+  line-height: normal;
+}
+
+
+.owl-carousel .owl-stage{ 
+  display: flex; }
+
+
+.card {
+  display: flex;
+  flex: 1 0 auto;
+  height: 95%;
+}
+
+
+.card-body {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+
+.categorias-bg {
+  background-color: #fff ;
+  .nav-link {
+      color: #222!important;
+      display: inline-block;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      font-size: 1.1rem!important;
+      text-transform: uppercase;
+      font-weight: bold;
+      &:before, &:after {
+          content: '';
+          position: absolute;
+          transition: transform .5s ease;
+      }
+      &:before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #ED4646;
+        transform:  translateX(-100%);
+      }
+      &:hover:before {
+        transform:  translateX(0);
+      }
+  
+}
+}   
+
+//Buscador con imagen de fondo
+ .hero-categorias {
+  background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.4), rgba(53, 53, 53, 0.571)),
+url('/images/bgimagen.jpg');
+  height:25rem;
+  background-size: cover;
+  background-position: top center;
+  .texto-buscar {
+      p {
+          font-size: 1.4rem;
+          color: #FFF;
+      }
+  }
+}  
+
+
+//Icono que acompaña a los botones de nav-bar (crear receta etc)
+.icono{
+    width: 24px;  
+}
+
+
+
+// Estilos para botones neon_______________________________________
+  .btnn {
+    line-height: 30px;
+    text-decoration: none;   
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 15px;  
+    position: relative;
+    display: block;
+    height: 39px;
+    width: 120px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #ED4646;
+    font-size: 12px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #ED4646;
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btnn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    text-decoration: none; 
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #ED4646;
+    transition: all 500ms ease;
+    z-index: -1;
+  }
+  
+  
+  .btn--2:hover {
+    text-decoration: none; 
+    background-color: #ED4646;
+    box-shadow: 0 0 10px #ED4646, 0 0 20px #ED4646, 0 0 20px #ED4646;
+    color: white;
+  }
+  
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0 #ED4646;
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+    }
+  }
+
+//_____________________________________________________________________

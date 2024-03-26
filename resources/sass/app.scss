@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Archivo de recetas
+@import 'recetas';
+
+//Como los estilos css del boton de 'like' los pusimos en un sass entonces importamos ese archivo
+@import 'like';
+
+
